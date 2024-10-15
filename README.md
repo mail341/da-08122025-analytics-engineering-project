@@ -58,10 +58,10 @@ The Research Center for Aerospace (RCA) where you work for as Data Analyst wants
 1. Select a historical weather event that occurred in the United States within the past 30 years that you believe would have led to the cancellation of flights. Research online. Based on the time period when the weather event occurred, determine which timeframe for flight data would best reflect both regular traffic and the associated irregularities.  
 
 2. Retrieve flight data as described in [fligths_data_wrangling.ipynb](fligths_data_wrangling.ipynb) and import it into the PostgreSQL database:  
-     **a.** download the CSV file containing flights data for the specific years and months you need from the [Bureau of Transportation Statistics website](https://transtats.bts.gov).      
+     **a.** download the CSV file containing flights data for the specific years and months you need from the Bureau of Transportation Statistics website **(URL in the jupyter notebook)**.      
      **b.** Clean your data (e.g. specify which columns you want to keep, rename columns etc.).  
-     **c.** (**not yet in the notebook!**) Reduce your dataframe to include 3-5 origin airports (check if they have weather stations here: https://meteostat.net/en/). You can expand your dataset to include more locations or destinations if this is helpful in your analysis. But keep an eye on the size of your data. Dealing with GBs of raw data can make everything very slow.    
-     **d.** (**not yet in the notebook!**) Connect to database and import the flights data as a table in the project schema.
+     **c.** **`To Do:`** Reduce your dataframe to include 3-5 origin airports (check if they have weather stations here: https://meteostat.net/en/). You can expand your dataset to include more locations or destinations if this is helpful in your analysis. But keep an eye on the size of your data. Dealing with GBs of raw data can make everything very slow.    
+     **d.** **`To Do:`** Connect to database and import the flights data as a table in the project schema.
 
      **e.** From the `airports` table in schema `public` filter the relevant airports and use the result set to create a new table in your project schema. 
 
@@ -74,7 +74,7 @@ The Research Center for Aerospace (RCA) where you work for as Data Analyst wants
 
 6. With pandas you have multiple options:
 
-     **a.** Perform a basic EDA on the initial data (prep or staging tables). The EDA should reflect what data is your project based on.
+     **a.** Perform a basic EDA on the initial data (prep or staging tables). The EDA should reflect what data is your project based on.  
      **b.** Come up with three different hypotheses regarding your available data. You could ask questions like 
 
      - "Can we see the weather event in the weather data?" 
